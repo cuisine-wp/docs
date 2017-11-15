@@ -1,0 +1,11 @@
+baseURL: /
+disablePathToLower: true
+languageCode: en-us
+title: Cuisine - WordPress Toolbelt
+theme: hugo-theme-learn
+home: [ "HTML", "RSS", "JSON"]
+
+params: 
+  themeVariant: "cuisine"
+  ordersectionsby: order
+  

@@ -1,0 +1,284 @@
+<nav id="sidebar">
+
+    <div id="header-wrapper">
+        <div id="header">
+            {{ partial "logo.html" . }}
+        </div>
+         {{ partial "search.html" . }}
+    </div>
+
+    <div class="highlightable">
+        <ul class="topics">
+            <li data-nav-id="/" title="Index" class="dd-item parent">
+                <a href="/">
+                    Cuisine Core:
+                </a>
+                <ul>
+                    <li data-nav-id="/" title="Introduction" class="dd-item">
+                        <a href="/">Introduction</a>
+                    </li>
+                    <li data-nav-id="/changelog/" title="changelog" class="dd-item">
+                        <a href="/changelog/">Changelog</a>
+                    </li>
+                    <li data-nav-id="/contributing/" title="contributing" class="dd-item">
+                        <a href="/contributing/">Contributing</a>
+                    </li>
+                
+                    <!-- getting started -->
+                    <li data-nav-id="/getting-started/" title="Posts" class="dd-item parent visited">
+                        <strong>Getting Started</strong>
+                    </li>
+                    <li class="dd-item"><a href="/core/getting-started/installation">Installation</a></li>
+                    <li class="dd-item"><a href="/core/getting-started/structure">Structure</a></li>
+        
+                    <!-- post types -->
+                    <li data-nav-id="/post-types-taxonomies/" title="Posts" class="dd-item parent visited">
+                        <strong>Post Types &amp; Taxonomies</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/post-types-taxonomies/creating-post-types/">Creating post types</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/post-types-taxonomies/creating-taxonomies">Creating taxonomies</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/post-types-taxonomies/routing">Routing</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/post-types-taxonomies/templating">Templating</a>
+                    </li>
+
+                    <!-- custom fields -->
+                    <li data-nav-id="/fields/" title="Posts" class="dd-item parent visited">
+                        <strong>Custom Fields</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/fields/introduction/">Introduction</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/fields/using-fields">Using custom fields</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/fields/field-types">Available field types</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/fields/saving-validation">Saving and validating</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/fields/creating-your-own-field-types/">Creating your own field types</a>
+                    </li>
+
+                    <!-- admin -->
+                    <li data-nav-id="/admin/" title="Posts" class="dd-item parent visited">
+                        <strong>WordPress Admin</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/admin/metaboxes/">Metaboxes</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/admin/settings-pages">Settings pages</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/admin/attachment-metaboxes">Attachment metaboxes</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/admin/user-metaboxes">User metaboxes</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/admin/term-metaboxes">Taxonomy metaboxes</a>
+                    </li>
+                    <li data-nav-id="/assets/" title="Assets" class="dd-item parent visited">
+                    <strong>Assets</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/assets/sass-files/">Sass files</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/assets/requirejs/">RequireJS</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/assets/scripts/">Scripts</a>
+                    </li>
+                    <li data-nav-id="/utilities/" title="utilities" class="dd-item parent visited">
+                        <strong>Utilities</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/utilities/url/">Url</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/utilities/sort/">Sorting</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/utilities/logger/">Logger</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/utilities/date/">Date</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/utilities/user/">User</a>
+                    </li>
+                    <li data-nav-id="/database/" title="database" class="dd-item parent visited">
+                        <strong>Database</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/database/database-migrations/">Database Migrations</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/database/fetching-data/">Fetching Data</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/database/adding-updating/">Adding & Updating data</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/core/database/wp-cli/">WP CLI Commands</a>
+                    </li>
+                </ul>
+            </li>
+            <li data-nav-id="/sections" title="Index" class="dd-item parent">
+                <a href="/sections">
+                    Cuisine Sections:
+                </a>
+                <ul>
+                    <!-- getting started -->
+                    <li data-nav-id="/sections/getting-started/" title="Posts" class="dd-item parent visited">
+                        <strong>Getting Started</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/getting-started/installation">Installation</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/getting-started/showing-sections">Showing sections in your theme</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/getting-started/adding-section-post-types">Adding section post types</a>
+                    </li>
+
+                    <!-- Templating -->
+                    <li data-nav-id="/sections/templates/" title="Posts" class="dd-item parent visited">
+                        <strong>Templating</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/templates/introduction">Introduction</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/templates/columns">Columns</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/templates/sections">Sections</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/templates/collections">Collections</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/templates/containers">Containers</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/templates/elements">Elements</a>
+                    </li>
+
+                    <!-- Templates -->
+                    <li data-nav-id="/sections/columns/" title="Posts" class="dd-item parent visited">
+                        <strong>Creating Columns</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/columns/registering">Registering</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/columns/extending">Extending</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/columns/saving">Saving data</a>
+                    </li>
+
+                    <!-- Templates -->
+                    <li data-nav-id="/sections/columns/" title="Posts" class="dd-item parent visited">
+                        <strong>Extending Sections</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/extending/panels">Setting-panels</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/extending/containers">Custom containers</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/sections/extending/views">Section view modes</a>
+                    </li>
+                </ul>
+            </li>
+            <li data-nav-id="/forms" title="Index" class="dd-item parent">
+                <a href="/forms">
+                    Cuisine Forms:
+                </a>
+                <ul>
+                    <!-- getting started -->
+                    <li data-nav-id="/forms/getting-started/" title="Posts" class="dd-item parent visited">
+                        <strong>Getting Started</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/forms/getting-started/installation">Installation</a>
+                    </li>
+                
+                    <!-- Templates -->
+                    <li data-nav-id="/forms/entries/" title="Posts" class="dd-item parent visited">
+                        <strong>Entries</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/forms/entries/reading-data">Reading data</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/forms/columns/saving-additional-data">Saving additional data</a>
+                    </li>
+
+                    <!-- Templates -->
+                    <li data-nav-id="/forms/fields/" title="Posts" class="dd-item parent visited">
+                        <strong>Field types</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/forms/fields/creating-your-own">Creating your own</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/forms/fields/customizing-saved-data">Customizing saved data</a>
+                    </li>
+
+                    <!-- Templating -->
+                    <li data-nav-id="/forms/form/" title="Posts" class="dd-item parent visited">
+                        <strong>Forms</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/forms/form/responses">Responses</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/forms/form/sending">Sending with SMTP</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/forms/form/generate">Generate</a>
+                    </li>
+
+
+                    <!-- Templates -->
+                    <li data-nav-id="/forms/notifications/" title="Posts" class="dd-item parent visited">
+                        <strong>Notifications</strong>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/forms/notifications/templating">Templating</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/forms/notifications/form-values">Using form values</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/forms/notifications/creating-shortcodes">Creating custom shortcodes</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/forms/notifications/custom-fields">Adding custom fields</a>
+                    </li>
+                    <li class="dd-item">
+                        <a href="/forms/extending/views">Section view modes</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <section id="footer">
+            {{ partial "menu-footer.html" . }}
+        </section>
+    </div>
+</nav>
