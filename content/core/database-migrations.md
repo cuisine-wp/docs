@@ -4,7 +4,7 @@ categories:
 title: "Database Migrations"
 date:  2017-11-15T22:33:51+01:00
 weight: 5
-url: /core/database/database-migrations 
+url: /core/database/migrations/
 ---
 
 Custom database tables in WordPress are usually a hassle of checking if it exists already. Apart from that it's not very database agnostic. Cuisine tries to fix this by, basically, implementing [Laravel's native migration system](https://laravel.com/docs/5.5/migrations).
@@ -100,49 +100,3 @@ You can create a lot of different column types with Cuisine. Here's a list:
 | $table->time('sunrise'); | TIME equivalent for the database. |
 | $table->tinyInteger('numbers'); | TINYINT equivalent for the database. |
 | $table->timestamp('added_on'); | TIMESTAMP equivalent for the database. |
-
----
-
-### Saving & Fetching data
-WordPress has all sorts of functions for saving and retrieving your data from the 12 database tables it already knows. We wouldn't want to leave you hanging, so we created a simple wrapper for your custom tables as well.
-
-```php
-
-use Cuisine\Wrappers\Record;
-
-//inserting:
-Record::insert( 'product_meta', $data );
-
-//updating:
-Record::update( 'product_meta', $id, $data );
-
-//removing:
-Record::delete( 'product_meta', $id );
-
-```
-
-The record class can handle table inserts, updates and upserts, but also fetches:
-
-```php
-
-//find all product meta associated with this product:
-Record::find( 'product_meta' )
-        ->where(['product_id' => $product_id ])
-        ->results();
-
-//find the first product meta where the price is 0
-Record::find( 'product_meta' )
-        ->where([
-
-            'product_id' => $product_id,
-            'price' => 0
-
-        ])->first();
-```
-
-Adding WHERE clauses results in "AND" queries by default. Currently we're still working on "OR" support.
-
-`Record::find()` queries will return either an `Array` or `null` if the query returned no table rows.
-
-
-
