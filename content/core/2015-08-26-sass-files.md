@@ -22,9 +22,9 @@ Cuisine, and it's themes do this by leveraging the power of [Sass](http://sass-l
 
 ## Including the Sass Class
 
-The Sass class is available through [Cuisine's Wrapper System](/core/getting-started/structure.html), so you can start using it by adding
+The Sass class is available through [Cuisine's Wrapper System](/core/getting-started/structure), so you can start using it by adding
 
-> **use Cuisine\Wrappers\Sass**
+`use Cuisine\Wrappers\Sass`
 
 to the top of your php-document.
 
@@ -75,7 +75,7 @@ Sass isn't compiled by Cuisine. There are javascript taskrunners or pieces of so
 
 By default Cuisine will try and put your plugin's Sass file in the following theme directory:
 
-> **my-theme/assets/src/sass/plugins** 
+> **my-theme/css/sass/vendors** 
 
 You can easily change this with a filter:
 
@@ -103,8 +103,6 @@ The third parameter passed to the **Sass::register()** function can help you in 
 If you'd like a more pragmatic option, you can use the [WP CLI](https://wp-cli.org/) command to refresh all sass files:
 
 > **wp cuisine sass --refresh**
-
-You can find more info on this and other WP CLI commands available in Cuisine in our [WP CLI section](/core/utilities/wp-cli).
 
 If you don't use WP CLI there's a third option to refresh the registry of sass-files in cuisine. Just look up the _registered\_sass\_files_ option in the WordPress options databasetable and delete that record. Now, on a page-refresh, all your sass-files will be renewed.
 

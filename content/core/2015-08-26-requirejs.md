@@ -43,11 +43,11 @@ In the example set above, we first check if the element **\#gallery-nav** can be
 
 ##Loading dependencies
 
-In WordPress we register our scripts with the [Script class](/core/assets/script.html) like so:
+In WordPress we register our scripts with the [Script class](/core/assets/script) like so:
 
 > Script::register( 'script_id', '/my-plugin/script_url', true );
 
-The last variable in that functioncall is wether or not to autoload this file at render time. You can read more about it in the [Script class docs](/core/assets/script.html).
+The last variable in that functioncall is wether or not to autoload this file at render time. You can read more about it in the [Script class docs](/core/assets/script).
 
 In RequireJS each dependency is stated at the start of a document, like we would in PHP when we use **use namespace\Class**. Here's an example:
 
@@ -103,5 +103,5 @@ Let's look at this parameter by parameter shall we?
 
 If you like more information on how shims work, I encourage you to [checkout there docs.](http://requirejs.org/docs/api.html#config-shim)
 
-> For more on RequireJS take a look at [their documentation](http://requirejs.org/docs/api.html)
+> For more on RequireJS take a look at [their documentation](http://requirejs.org/docs/api)
 

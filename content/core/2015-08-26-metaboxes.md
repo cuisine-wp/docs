@@ -7,9 +7,9 @@ title: Metaboxes
 url: /core/admin/metaboxes/
 ---
 
-Custom metaboxes are one of the things that make WordPress great. In Cuisine, the Metabox object can take an array of [field-objects](/core/fields/using-fields.html) which are validated and saved automatically.
+Custom metaboxes are one of the things that make WordPress great. In Cuisine, the Metabox object can take an array of [field-objects](/core/fields/using-fields) which are validated and saved automatically.
 
-The Metabox class is available through [Cuisine's Wrapper System](/core/getting-started/structure.html), so you can start using it by adding
+The Metabox class is available through [Cuisine's Wrapper System](/core/getting-started/structure), so you can start using it by adding
 
 `use Cuisine\Wrappers\Metabox`
 
@@ -39,7 +39,7 @@ Metabox::make( 'My metabox', 'post' )->set( $fields );
 
 Let's break that down:
 
->**Metabox::make()** is the function we use to prop up our Metabox. **set()** actually registers it with WordPress. It takes an array of [Field Objects](/core/fields/using-fields.html) or can alternatively take a call to a static php function (see the next example).<br/><br/>
+>**Metabox::make()** is the function we use to prop up our Metabox. **set()** actually registers it with WordPress. It takes an array of [Field Objects](/core/fields/using-fields) or can alternatively take a call to a static php function (see the next example).<br/><br/>
 >
 >The parameters passed down to the make-function are, in order of appearence:
 >
@@ -53,7 +53,7 @@ Let's break that down:
 
 ### Creating custom Metabox layouts
 
-Instead of passing an array of [Field Objects](/core/fields/using-fields.html) you can also just call a static function:
+Instead of passing an array of [Field Objects](/core/fields/using-fields) you can also just call a static function:
 
 {{< highlight php  >}}
 

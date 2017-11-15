@@ -10,7 +10,7 @@ url: /core/post-types-taxonomies/creating-post-types/
 Post Types are one of the reasons WordPress can call itself a full-fledged CMS, so creating post types should be damn easy right? Well, regular WordPress gives you a LOT of options when registering a Post Type. When usually you're okay with just passing the slug, the singular label and the plural label. With Cuisine you can do just that, without having to dive into the [codex page](https://codex.wordpress.org/Function_Reference/register_post_type) everytime.
 
 
-The PostType class is available through [Cuisine's Wrapper System](/core/getting-started/structure.html), so you can start using it by adding
+The PostType class is available through [Cuisine's Wrapper System](/core/getting-started/structure), so you can start using it by adding
 
 `use Cuisine\Wrappers\PostType`
 

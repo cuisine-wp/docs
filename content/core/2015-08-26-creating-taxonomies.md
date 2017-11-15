@@ -7,9 +7,9 @@ title: Creating Taxonomies
 url: /core/post-types-taxonomies/creating-taxonomies/
 ---
 
-Like post types, taxonomies are extremely important to WordPress development. It's so sad that registering a simple taxonomy needs more that one line of code. So, just like [Post Types in Cuisine](/core/post-types-taxonomies/creating-post-types.html), Taxonomies have been made a lot simpeler.
+Like post types, taxonomies are extremely important to WordPress development. It's so sad that registering a simple taxonomy needs more that one line of code. So, just like [Post Types in Cuisine](/core/post-types-taxonomies/creating-post-types), Taxonomies have been made a lot simpeler.
 
-The Taxonomy-class is available through [Cuisine's Wrapper System](/core/getting-started/structure.html), so you can start using it by adding
+The Taxonomy-class is available through [Cuisine's Wrapper System](/core/getting-started/structure), so you can start using it by adding
 
 `use Cuisine\Wrappers\Taxonomy`
 

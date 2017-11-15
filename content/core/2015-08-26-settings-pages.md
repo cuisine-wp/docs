@@ -7,11 +7,11 @@ title: Settings Pages
 url: /core/admin/settings-pages/
 ---
 
-Creating settings pages can be an annoying task in WordPress. With Cuisine it's actually pretty similair to [creating Metaboxes](/core/admin/metaboxes.html).
+Creating settings pages can be an annoying task in WordPress. With Cuisine it's actually pretty similair to [creating Metaboxes](/core/admin/metaboxes).
 
-Settings Page builders in Cuisine can take an array of [field-objects](/core/fields/using-fields.html) which are validated and saved automatically.
+Settings Page builders in Cuisine can take an array of [field-objects](/core/fields/using-fields) which are validated and saved automatically.
 
-The SettingsPage class is available through [Cuisine's Wrapper System](/core/getting-started/structure.html), so you can start using it by adding
+The SettingsPage class is available through [Cuisine's Wrapper System](/core/getting-started/structure), so you can start using it by adding
 
 `use Cuisine\Wrappers\SettingsPage`
 
@@ -51,7 +51,7 @@ SettingsPage::make(
 
 Let's break that down:
 
->**SettingsPage::make()** is the function we use to create our settings page. **set()** actually registers it with WordPress. It takes an array of [Field Objects](/core/fields/using-fields.html) or can alternatively take a call to a static php function or an array of setting-page tabs (see the next examples).<br/><br/>
+>**SettingsPage::make()** is the function we use to create our settings page. **set()** actually registers it with WordPress. It takes an array of [Field Objects](/core/fields/using-fields) or can alternatively take a call to a static php function or an array of setting-page tabs (see the next examples).<br/><br/>
 >
 >The parameters passed down to the make-function are, in order of appearence:
 >
@@ -105,7 +105,7 @@ SettingsPage::make(
 
 ### Creating custom Settings Page layouts
 
-Instead of passing an array of [Field Objects](/core/fields/using-fields.html) you can also just call a static function:
+Instead of passing an array of [Field Objects](/core/fields/using-fields) you can also just call a static function:
 
 {{< highlight php  >}}
 

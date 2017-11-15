@@ -49,7 +49,7 @@ Instead of passing an array of [Field Objects](/fields/using-fields) you can als
 
 {{< highlight php >}}
 
-	UserMetabox::make( 'My Metabox' )->set( '\MyNameSpace\MyClass::metabox' );
+	UserMetabox::make( 'My Metabox' )->set( '\\MyNameSpace\\MyClass::metabox' );
 
 namespace MyNameSpace;
 class MyClass{

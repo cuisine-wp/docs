@@ -9,9 +9,9 @@ url: /core/post-types-taxonomies/templating/
 
 Templating in Cuisine means routing a certain post-type to a template-file. Therefor it's done by the routing class. You can also use the routing class to route to a specific URL. 
 
-On this page we'll be looking into routing to a template. If you're looking to route your post type to a certain URL [check out the page on URL-routing](/core/post-types-taxonomies/routing.html).
+On this page we'll be looking into routing to a template. If you're looking to route your post type to a certain URL [check out the page on URL-routing](/core/post-types-taxonomies/routing).
 
-The Route-class is available through [Cuisine's Wrapper System](/core/getting-started/structure.html), so you can start using it by adding
+The Route-class is available through [Cuisine's Wrapper System](/core/getting-started/structure), so you can start using it by adding
 
 `use Cuisine\Wrappers\Route`
 
@@ -25,21 +25,21 @@ Cuisine changes the default template hierachy and makes it a bit simpeler. It lo
 
 For singular posts and pages:
 
-1. **{post_type}-{slug}.php** ( page-about-us.php )
-2. **{post_type}.php** ( page.php )
-3. **detail.php**
+1. **pages/{post_type}-{slug}.php** ( project-projectname.php )
+2. **pages/{post_type}.php** ( project.php )
+3. **pages/detail.php**
 
 And for overview pages:
 
-1. **{plural post-type label}.php** ( projects.php )
-2. **overview.php** 
+1. **pages/{plural post-type label}.php** ( projects.php )
+2. **pages/overview.php** 
 
 
 <br/>
 
-####Location of template files
+#### Location of template files
 
-> **Very Important:** Cuisine looks for templates in your theme's /templates folder. You can change this using the **cuisine_template_location** filter. 
+> **Very Important:** Cuisine looks for templates in your theme's /pages folder. This can be changed using the cuisine_template_location filter.
 >
 > See below for an example.
 
@@ -47,16 +47,14 @@ And for overview pages:
 {{< highlight php  >}}
 	
 add_filter( 'cuisine_template_location', function( $location ){
-	
 	return 'my-template-folder/'; //this needs a trailing slash
-
 });
 
 {{< / highlight >}}
 
 <br/>
 
-**We recommend using Cuisine with it's empty starter-theme Carte Blanche**. It features a clear and Cuisine-ready folder structure. Out-of-the-box support for RequireJS and the Sass-asset pipeline and more good stuff you'll be happy about. [To learn more about using Cuisine and Carte Blanche together check our documentation page about it](/core/theme/carte-blanche.html).
+**We recommend using Cuisine with it's empty starter-theme Carte Blanche**. It features a clear and Cuisine-ready folder structure. Out-of-the-box support for RequireJS and the Sass-asset pipeline and more good stuff you'll be happy about. [To learn more about using Cuisine and Carte Blanche together check our documentation page about it](/core/theme/carte-blanche).
 
 <br/>
 
@@ -65,7 +63,7 @@ add_filter( 'cuisine_template_location', function( $location ){
 Routing post types to templates is done by using the WordPress [template_include filter](https://codex.wordpress.org/Plugin_API/Filter_Reference/template_include). This is considered best practise over using the [template_redirect hook](https://codex.wordpress.org/Plugin_API/Action_Reference/template_redirect). All your registered templates will first be tested on existence and after that follow the regular WordPress theme hierarchy.
 
 
-So, following our example of [the project-post type](/core/post-types-taxonomies/creating-post-types.html), we'll create a route for our post type **project**. We'll want the overview page to be named __/our-work__ and an single project can route to __/project/project-name__.
+So, following our example of [the project-post type](/core/post-types-taxonomies/creating-post-types), we'll create a route for our post type **project**. We'll want the overview page to be named __/our-work__ and an single project can route to __/project/project-name__.
 
 <br/>
 

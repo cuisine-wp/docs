@@ -19,10 +19,10 @@ The example above will put out the following HTML:
 
 {{< highlight html  >}}
 
-	<div class="field-wrapper text">
+<div class="field-wrapper text">
 
-		<label for="211b2e0ca31b24032d930f07c9a98aaa">My Label</label>
-		<input type="text" id="211b2e0ca31b24032d930f07c9a98aaa" class="field input-field field-my-name type-text" name="my-name">
+    <label for="211b2e0ca31b24032d930f07c9a98aaa">My Label</label>
+    <input type="text" id="211b2e0ca31b24032d930f07c9a98aaa" class="field input-field field-my-name type-text" name="my-name">
 
 </div>
 
@@ -38,13 +38,13 @@ As you might imagine, a name and label are hardly enough information for a field
 
 {{< highlight php  >}}
 
-	$args = array(
-		'label'			=> 		'top',                      //options: top, left or false
-		'placeholder'	=> 		'My placeholder',
-		'defaultValue'	=>		'My Default Value',
-		'required'		=>		true                        //is this a required field?
-		'validation'	=>		array( 'not-empty' )        //More on this at Saving & Validation.
-		'class'			=>		array( 'my-custom-class' )  //Additional classes you'd like to pass
+$args = array(
+    'label'			=> 		'top',                      //options: top, left or false
+    'placeholder'	=> 		'My placeholder',
+    'defaultValue'	=>		'My Default Value',
+    'required'		=>		true                        //is this a required field?
+    'validation'	=>		array( 'not-empty' )        //More on this at Saving & Validation.
+    'class'			=>		array( 'my-custom-class' )  //Additional classes you'd like to pass
 );
 
 Field::text( 'my-name', 'My Label', $args )->render();
@@ -57,10 +57,10 @@ The html-output to this field is quite a bit different:
 
 {{< highlight html  >}}
 
-	<div class="field-wrapper text label-top my-custom-class">
+<div class="field-wrapper text label-top my-custom-class">
 
-		<label for="...">My Label</label>
-		<input type="text" id="..." class="field input-field field-my-name type-text" name="my-name" placeholder="My placeholder" value="My Default Value" data-validate="required,not-empty">
+    <label for="...">My Label</label>
+    <input type="text" id="..." class="field input-field field-my-name type-text" name="my-name" placeholder="My placeholder" value="My Default Value" data-validate="required,not-empty">
 
 </div>
 
