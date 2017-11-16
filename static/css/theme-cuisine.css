@@ -110,3 +110,14 @@ a:hover {
     border-color: var(--MENU-SECTION-HR-color);
 }
 
+ins{
+    border-radius: 2px;
+    white-space: nowrap;
+    color: #5e5e5e;
+    background: #FFF7DD;
+    border: 1px solid #fbf0cb;
+    padding: 0px 2px;
+    text-decoration: none;
+    font-family: "Consolas", menlo, monospace;
+    font-size: 92%;
+}

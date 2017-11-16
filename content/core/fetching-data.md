@@ -31,7 +31,7 @@ If you want to look for a record that you don't know the ID of, you can use the 
 $productId = '1';
 Record::find( 'product_meta' )->where( 'product_id', $productId )->first();
 ```
-As you can see all of these methods are chainable, which makes this query very easy to read. This will return the first record it finds where the `product_id` is equal to `$productId`.
+As you can see all of these methods are chainable, which makes this query very easy to read. This will return the first record it finds where the <ins>product_id</ins> is equal to <ins>$productId</ins>.
 
 --- 
 
@@ -46,7 +46,7 @@ $metaArray = $meta->toArray();
 
 ```
 
-In this example we'll get all records in the `product_meta` table that belong to our `$product_id` variable. The results will be a [Cuisine Collection](/core/utilities/collections), which you can easily convert to an array, a json string or whatever you fancy.
+In this example we'll get all records in the <ins>product_meta</ins> table that belong to our <ins>$product_id</ins> variable. The results will be a [Cuisine Collection](/core/utilities/collections), which you can easily convert to an array, a json string or whatever you fancy.
 
 ### Adding multiple clauses.
 You may have noticed that the where method takes an array as it's parameter. In this array we can of course put multiple clauses. Like so:

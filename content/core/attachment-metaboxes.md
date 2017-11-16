@@ -5,9 +5,9 @@ weight: 5
 url: /core/admin/attachment-metaboxes/
 ---
 
-Attachments in WordPress do sometimes require some extra meta-data. In Cuisine, creating custom fields for attachments becomes an extremely easy task. Just like our other metaboxes, the Attachment-Metabox object can take an array of [field-objects](/fields/using-fields/) which are validated and saved automatically.
+Attachments in WordPress do sometimes require some extra meta-data. In Cuisine, creating custom fields for attachments becomes an extremely easy task. Just like our other metaboxes, the Attachment-Metabox object can take an array of [field-objects](/core/fields/using-fields/) which are validated and saved automatically.
 
-The Metabox class is available through [Cuisine's Wrapper System](/getting-started/structure/), so you can start using it by adding
+The Metabox class is available through [Cuisine's Wrapper System](/core/getting-started/structure/), so you can start using it by adding
 
 `use Cuisine\Wrappers\AttachmentMetabox`
 
