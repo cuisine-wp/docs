@@ -1,0 +1,12 @@
+<script>
+    jQuery( document ).ready( function( $ ){
+
+        var _coreBrdCrm = $('#breadcrumbs').find('a[href="/core/"]');
+
+        if( _coreBrdCrm.length > 0 ){
+            _coreBrdCrm.html('Cuisine Core');
+            _coreBrdCrm.prop('href', '/core/getting-started/installation/' );
+        }  
+    
+    });
+</script>
