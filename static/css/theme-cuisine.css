@@ -47,6 +47,10 @@ a {
     color: var(--MAIN-ANCHOR-color);
 }
 
+#logo img{
+    max-height: 75px;
+}
+
 a:hover {
     color: var(--MAIN-LINK-HOVER-color);
 }
