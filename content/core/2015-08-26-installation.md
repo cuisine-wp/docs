@@ -7,7 +7,7 @@ title: Installation
 url: /core/getting-started/installation/
 ---
 
-Clone the git repo - `git clone https://github.com/chefduweb/cuisine.git` or install with composer:
+Clone the git repo - `git clone https://github.com/cuisine-wp/cuisine.git` or install with composer:
 
 `composer require chefduweb/cuisine`
 
@@ -19,7 +19,7 @@ After you have all the files you need to install cuisine like a regular WordPres
 
 ### Getting Started
 
-Creating plugins and themes with the power of Cuisine is quite easy; you just create regular WordPress themes & plugins. However, if you want to start off with some boilerplate code we recommand [Carte Blanche](https://github.com/chefduweb/carte-blanche), our WordPress empty-canvas theme and [Crouton](https://github.com/chefduweb/crouton), a scaffolded plugin.
+Creating plugins and themes with the power of Cuisine is quite easy; you just create regular WordPress themes & plugins. However, if you want to start off with some boilerplate code we recommand [Carte Blanche](https://github.com/cuisine-wp/carte-blanche), our WordPress empty-canvas theme and [Crouton](https://github.com/cuisine-wp/crouton), a scaffolded plugin.
 
 Here are some examples:
 

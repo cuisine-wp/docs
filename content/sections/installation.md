@@ -7,7 +7,7 @@ weight: 5
 url: '/sections/getting-started/installation/'
 ---
 
-Clone the git repo - `git clone git@github.com:cuisine-wp/cuisine-sections.git` or install with composer:
+Clone the git repo - `git clone git@github.com:cuisine-wp/chef-sections.git` or install with composer:
 
 `composer require cuisine-wp/cuisine-sections`
 
