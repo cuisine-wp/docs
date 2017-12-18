@@ -94,7 +94,7 @@ The example above first checks if we're trying to save data for our custom colum
 
 These WordPress action hooks run just before and just after a column gets saved, so you can add additional data or save a subset of column data elsewhere (for example in a custom database table.)
 
-Here's an example, where we save timestamp data to a custom table using [Cuisine's Record class](/core/database/record):
+Here's an example, where we save timestamp data to a custom table using [Cuisine's Record class](/core/database/adding-updating):
 
 ```php
 
