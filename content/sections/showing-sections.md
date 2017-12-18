@@ -33,6 +33,24 @@ The <ins>$section</ins> variable in this example needs to be a valid instance of
 
 ---
 
+## Showing a single section
+You can also load any section you want from anywhere in your theme with <ins>get_section()</ins>. 
+The function takes the following parameters:
+
+- $postId -> the post id where this section is set
+- $sectionId -> the id of the section you're loading
+- $path -> path to a custom template (optional)
+
+Here's an example:
+
+```php
+echo get_section( 2, 1 ); //load the first section from the second post, 
+
+echo get_section( 2, 1, '/sections/custom.php' ); //the same as above, but use the custom.php file in my theme as it's template.
+```
+
+---
+
 ## Extending the Walker
 
 All of the template-tag examples above use the <ins>CuisineSections\Front\Walker</ins> class to display sections, columns and section-templates.

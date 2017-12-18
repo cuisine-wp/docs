@@ -7,7 +7,6 @@ weight: 5
 url: /sections/templating/columns
 ---
 
-
 Column templates are the most important templates in Cuisine Sections. You'll probably be changing these the most. Columns are also one of the trickier ones to get, since each column-type requires it's own template.
 
 If you haven't yet, [read up on Cuisine Sections template structure & hierarchy](/sections/templating/introduction/). They'll help you immensly along the way
