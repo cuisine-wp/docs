@@ -16,7 +16,7 @@ Cuisine, and it's themes do this by leveraging the power of [Sass](http://sass-l
 > create Sass-file on there own.
 >
 > If you are not yet familiar with working with Sass we encourage you to
-> [check out the docs on Sass in our theme section](https://doc.chefduweb.nl/themes/sass).
+> [check out the docs on Sass in our theme section](/core/theming/sass).
 
 ---
 
@@ -34,12 +34,12 @@ to the top of your php-document.
 
 Registering a Sass file in Cuisine is pretty easy:
 
-{{< highlight php  >}}
+```php
 	
 $url = 'plugin-folder/Assets/sass/';
 Sass::register( 'my-sass-file', $url.'_sass', false );
 
-{{< / highlight >}}
+```
 
 <br/>
 
@@ -75,22 +75,22 @@ Sass isn't compiled by Cuisine. There are javascript taskrunners or pieces of so
 
 By default Cuisine will try and put your plugin's Sass file in the following theme directory:
 
-> **my-theme/css/sass/vendors** 
+`my-theme/css/sass/vendors`
 
 You can easily change this with a filter:
 
-{{< highlight php  >}}
+```php
 
 add_filter( 'cuisine_sass_folder', function(){
 	return 'css/sass/plugins/';
 });
 
-{{< / highlight >}}
+```
 
 <br/>
 In the example Cuisine will place all sass-files that get registered in the following directory:
 
-> **my-theme/css/sass/plugins/**
+`my-theme/css/sass/plugins/`
 
 ---
 
@@ -102,7 +102,7 @@ The third parameter passed to the **Sass::register()** function can help you in 
 
 If you'd like a more pragmatic option, you can use the [WP CLI](https://wp-cli.org/) command to refresh all sass files:
 
-> **wp cuisine sass --refresh**
+`wp cuisine sass --refresh`
 
 If you don't use WP CLI there's a third option to refresh the registry of sass-files in cuisine. Just look up the _registered\_sass\_files_ option in the WordPress options databasetable and delete that record. Now, on a page-refresh, all your sass-files will be renewed.
 

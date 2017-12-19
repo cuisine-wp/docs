@@ -10,6 +10,12 @@ url: /sections/templating/introduction
 
 Templates in Cuisine Sections are all completely overwritable. That's what makes it such a flexible system. On this page you'll learn how the template-engine works in general and how you can replace individual templates.
 
+Here you'll learn about the following aspects of templating for Cuisine Sections:
+
+1. [Structure](#structure) - How does the engine work at the base level
+2. [Hierarchy](#hierarchy) - How can you target the right template?
+3. [Styling](#styling) - How is CSS being handled by sections?
+
 ---
 
 ## Structure
@@ -53,6 +59,26 @@ In the WordPress admin, when logged in as an administrator, you'll find a so cal
 Here's what to look for:<br/>
 ![The Template Snitch](/images/snitch.png)<br/>
 You will see the dropdown once you mouse over the template icon.
+
+---
+
+## Styling
+
+There are two ways to handle the basic styling of your grid in Cuisine Sections: 
+
+1. Implement the [Sass-pipeline provided by Cuisine](/core/assets/sass-files/)
+2. Ignore the styling from this plugin and do it yourself.
+
+### Using Sass & the Sass pipeline.
+If you are already using [Sass](http://sass-lang.com/) to style your themes, we'd recommend letting Cuisine handle everything. The Sass pipeline in Cuisine allows cuisine enabled plugins to add custom sass files to your theme. These files will be stored in the following location:
+`my-theme/css/sass/vendors`
+
+You can chose to include whichever of these files in your main sass file, but you can also use a tool like [Sass Globbing](https://github.com/chriseppstein/sass-globbing) to automatically include everything from the <ins>vendors</ins> folder; this is what our starter theme [Carte Blanche](https://github.com/cuisine-wp/carte-blanche) does.
+
+Once you've loaded the sass file of Cuisine Sections, all you will see is the grid working: columns start to appear next to each other in the right order; nothing more. Because we believe you want to be in full control of your styling. 
+
+### Styling everything yourself
+If you've chosen to style everything yourself we have some recommendations for you. First off, the default Sections grid is build with tools like Flexbox and CSS Grid in mind; it's html is as clean and semantic as possible without the use of much classes. Adding classes for bootstrap support can be done, but definitely isn't recommended. In the Sections plugin folder, you'll find a compiled css file that can help you get going. 
 
 
 
